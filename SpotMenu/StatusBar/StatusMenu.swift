@@ -19,17 +19,6 @@ final class StatusMenu {
     // MARK: - Lifecycle methods
 
     init() {
-
-        menu.addItem(NSMenuItem(
-            title: NSLocalizedString("Issues", comment: ""),
-            action: #selector(AppDelegate.openIssues(_:)),
-            keyEquivalent: "I")
-        )
-        menu.addItem(NSMenuItem(
-            title: NSLocalizedString(" - kmikiy - ", comment: ""),
-            action: #selector(AppDelegate.openKmikiy(_:)),
-            keyEquivalent: "")
-        )
         menu.addItem(NSMenuItem.separator())
         menu.addItem(NSMenuItem(
             title: NSLocalizedString("Check for Updates...", comment: ""),

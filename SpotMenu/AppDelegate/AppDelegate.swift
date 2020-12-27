@@ -11,8 +11,6 @@ import Carbon.HIToolbox
 import Cocoa
 import MusicPlayer
 import Sparkle
-import Fabric
-import Crashlytics
 
 @NSApplicationMain
 final class AppDelegate: NSObject, NSApplicationDelegate {
@@ -68,8 +66,6 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     // MARK: - AppDelegate methods
 
     func applicationDidFinishLaunching(_: Notification) {
-        Fabric.with([Crashlytics.self])
-        
         UserPreferences.initializeUserPreferences()
 
         musicPlayerManager = MusicPlayerManager()

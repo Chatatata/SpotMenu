@@ -69,6 +69,7 @@ class ScrollingStatusItemView: NSView {
     private lazy var scrollingTextView: ScrollingTextView = {
         let view = ScrollingTextView()
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.font = Font.systemFont(ofSize: 12)
         return view
     }()
 

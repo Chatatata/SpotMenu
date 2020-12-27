@@ -92,10 +92,10 @@ final class StatusItemBuilder {
 
     func getString() -> String {
         if artist.count != 0 && title.count != 0 && albumName.count != 0 {
-            return "\(playingIcon)\(artist) - \(title) - \(albumName)"
+            return "Müzik: \(playingIcon)\(artist) - \(title) - \(albumName)"
         } else if artist.count != 0 && title.count != 0 {
-            return "\(playingIcon)\(artist) - \(title)"
+            return "Müzik: \(playingIcon)\(artist) - \(title)"
         }
-        return "\(playingIcon)\(artist)\(title)"
+        return "Müzik: \(playingIcon)\(artist)\(title)"
     }
 }
